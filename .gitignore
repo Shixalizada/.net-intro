@@ -1,52 +1,99 @@
-# Prerequisites
-*.d
+        int score = 0;
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+        Console.WriteLine("Teste xos gelmisiniz!");
 
-# Linker output
-*.ilk
-*.map
-*.exp
+        Console.WriteLine("1. C# dili hansi sirket terefinden yaradilmisdir?\nA) Google\nB) Microsoft\nC) Apple\nD) Oracle");
+        Console.Write("Cavab: ");
+        char answer1 = Convert.ToChar(Console.ReadLine());
+        Console.WriteLine();
+        if (answer1 == 'B' || answer1 == 'b')
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("Duzgun!\n");
+            score++;
+        }
+        else
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine("Yanlis! Duzgun cavab: B\n");
+        }
+        Console.ResetColor();
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+        Console.WriteLine("2. Hansi Programlasdirma dili daha suretlidir?\nA) C++\nB) Python\nC) C#\nD) F#");
+        Console.Write("Cavab: ");
+        Console.WriteLine();
+        char answer2 = Convert.ToChar(Console.ReadLine());
+    
+    
+        if (answer2 == 'A' || answer2 == 'a')
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("Duzgun!\n");
+            score++;
+        }
+        else
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine("Yanlis! Duzgun cavab: A\n");
+        }
+        Console.ResetColor();
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+
+
+        Console.WriteLine("3. iki sifir,iki dord?\nA) 2024\nB) 2044\nC) 0024\nD) 0044");
+        Console.Write("Cavab: ");
+        char answer3 = Convert.ToChar(Console.ReadLine());
+        Console.WriteLine();
+        if (answer3 == 'D' || answer3 == 'd')
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("Duzgun!\n");
+            score++;
+        }
+        else
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine("Yanlis! Duzgun cavab: D\n");
+        }
+        Console.ResetColor();
+
+        Console.WriteLine("4. 2+2 = ?\nA) 12\nB) 22\nC) 4\nD) 40");
+        Console.Write("Cavab: ");
+        char answer4 = Convert.ToChar(Console.ReadLine());
+        Console.WriteLine();
+        if (answer4 == 'C' || answer4 == 'c')
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("Duzgun!\n");
+            score++;
+        }
+        else
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine("Yanlis! Duzgun cavab: C\n");
+        }
+        Console.ResetColor();
+
+        Console.WriteLine("5. Hansi deyisen novu tam onluq kesr saxlayir ?\nA) int\nB) float\nC) char\nD) string");
+        Console.Write("Cavab: ");
+        char answer5 = Console.ReadKey().KeyChar;
+        Console.WriteLine();
+        if (answer5 == 'B' || answer5 == 'b')
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("Duzgun!\n");
+            score++;
+        }
+        else
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine("Yanlis! Duzgun cavab: B\n");
+        }
+        Console.ResetColor();
+
+        Console.WriteLine($"Neticeniz: {score}/5");
+
